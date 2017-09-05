@@ -1,4 +1,9 @@
 <h1>Welcome!</h1>
 <p>I'm Railsbot, your friendly conversation simulator.</p>
 <p> <%= @questions[0].script %> </p>
+
+<button type="button" > <%= @messages[0].script %> </button>
+<button type="button" onclick="alert('AntiSocial!')"> <%= @messages[1].script %> </button>
+
 <p> <%= link_to "Questions", questions_path %> </p>
+<p> <%= link_to "Messages", messages_path %> </p>
