@@ -1680,3 +1680,1005 @@ Processing by RoundsController#show as HTML
 Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:06:57 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Message with 'id'=3):
+  
+app/views/rounds/show.html.erb:15:in `_app_views_rounds_show_html_erb___134966443891802995_70158985178360'
+Started GET "/rounds" for 127.0.0.1 at 2017-09-05 15:07:14 +0100
+Processing by RoundsController#index as HTML
+  Rendering rounds/index.html.erb within layouts/application
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds"[0m
+  Rendered rounds/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:07:16 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds" for 127.0.0.1 at 2017-09-05 15:07:17 +0100
+Processing by RoundsController#index as HTML
+  Rendering rounds/index.html.erb within layouts/application
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds"[0m
+  Rendered rounds/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:07:18 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Message with 'id'=3):
+  
+app/views/rounds/show.html.erb:15:in `_app_views_rounds_show_html_erb___134966443891802995_70158977610480'
+Started GET "/rounds" for 127.0.0.1 at 2017-09-05 15:07:20 +0100
+Processing by RoundsController#index as HTML
+  Rendering rounds/index.html.erb within layouts/application
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds"[0m
+  Rendered rounds/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rounds/3" for 127.0.0.1 at 2017-09-05 15:07:21 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=3):
+  
+app/views/rounds/show.html.erb:10:in `_app_views_rounds_show_html_erb___134966443891802995_70158996095440'
+Started GET "/rounds" for 127.0.0.1 at 2017-09-05 15:07:26 +0100
+Processing by RoundsController#index as HTML
+  Rendering rounds/index.html.erb within layouts/application
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds"[0m
+  Rendered rounds/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:07:32 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-09-05 15:07:38 +0100
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2017-09-05 15:07:46 +0100
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (3.5ms)
+  Rendered questions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-09-05 15:07:54 +0100
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxIwg/n9FLDNpwBjSUUVXzHpt/YFu8QJARU0ARGbdkSrbrBFLXqmmfEB8ErTaCNF09pocffIZXpwLL+2ZD/ruA==", "question"=>{"script"=>"How about a Third?"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "How about a Third?"], ["created_at", "2017-09-05 14:07:54.801308"], ["updated_at", "2017-09-05 14:07:54.801308"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/questions/3
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2017-09-05 15:07:54 +0100
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-09-05 15:07:55 +0100
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2017-09-05 15:07:57 +0100
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (1.6ms)
+  Rendered questions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-09-05 15:08:01 +0100
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLAMSVByWPDsC4d5hhD3ZNfZ0vOmmCWI+1tnpx6G31QMzIyPhPXq2dCtd1AcPcF+NeoNdFTrhPuKYuwQayJCqA==", "question"=>{"script"=>"A fourth?"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "A fourth?"], ["created_at", "2017-09-05 14:08:01.997454"], ["updated_at", "2017-09-05 14:08:01.997454"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/questions/4
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/questions/4" for 127.0.0.1 at 2017-09-05 15:08:02 +0100
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-09-05 15:08:03 +0100
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2017-09-05 15:08:04 +0100
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (1.8ms)
+  Rendered questions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-09-05 15:08:14 +0100
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4tClaKA8uT2/jpUjm5n0NywTTY5coXIxf5LzofZsBW4mrCWudLsLFIMoZQoBtMItziCSCa7S00IOq3gWg8iYkg==", "question"=>{"script"=>"A fifth? This is the last"}, "commit"=>"Create Question"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "A fifth? This is the last"], ["created_at", "2017-09-05 14:08:14.204615"], ["updated_at", "2017-09-05 14:08:14.204615"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/questions/5
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/questions/5" for 127.0.0.1 at 2017-09-05 15:08:14 +0100
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-09-05 15:08:15 +0100
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:08:21 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:08:24 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (2.3ms)
+  Rendered messages/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:08:28 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"znrpkdHtp7fh5DxJqjXYIsTssj5tYg6b44WL29f/fENjJ4UNcYKu78rHsdzZwzcVIpe+XLyPVMUypoAxzBHY6w==", "message"=>{"script"=>"OK..."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "OK..."], ["created_at", "2017-09-05 14:08:28.744445"], ["updated_at", "2017-09-05 14:08:28.744445"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/3
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2017-09-05 15:08:28 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:08:29 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:08:30 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.7ms)
+  Rendered messages/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:08:35 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JL1MDwq9lWr2o934Tl/D5jLMtpVKYQTpLKsGKBPaq9yJ4CCTqtKcMt2AUG09qSzR1Le695uMXrf9iA3CCDQPdA==", "message"=>{"script"=>"No thanks..."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "No thanks..."], ["created_at", "2017-09-05 14:08:35.508661"], ["updated_at", "2017-09-05 14:08:35.508661"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/4
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2017-09-05 15:08:35 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:08:36 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:08:37 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.7ms)
+  Rendered messages/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:08:49 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F2529NUw+B06OUr2F3dbNMlacalalUY1xPNiYeJVfpm6MxpodV/xRREax2NkgbQDLyF9y4t4HGsV0GmL+bvaMQ==", "message"=>{"script"=>"Sure! But where is this g..."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "Sure! But where is this g..."], ["created_at", "2017-09-05 14:08:49.634594"], ["updated_at", "2017-09-05 14:08:49.634594"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/5
+Completed 302 Found in 5ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2017-09-05 15:08:49 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:08:50 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:08:56 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.8ms)
+  Rendered messages/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:09:02 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5/YFKLgDUU4g1MV0td03MD9lnUn1KGCBaNqOxQvEf1NKq2m0GGxYFgv3SOHGK9gH2R6RKyTFOt+5+YUvECrb+w==", "message"=>{"script"=>"I've had enough."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "I've had enough."], ["created_at", "2017-09-05 14:09:02.158815"], ["updated_at", "2017-09-05 14:09:02.158815"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/6
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/messages/6" for 127.0.0.1 at 2017-09-05 15:09:02 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:09:03 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:09:06 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.7ms)
+  Rendered messages/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:09:11 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmIaGI7HTRlzZsH66zsoEiK0BfhFk5doEdgQ9RjKHAALP3aELqhEQVhFTG+YzcclxM8JmpR+zTbA+xsfAyS4qA==", "message"=>{"script"=>"Yep."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "Yep."], ["created_at", "2017-09-05 14:09:11.611211"], ["updated_at", "2017-09-05 14:09:11.611211"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/7
+Completed 302 Found in 5ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/messages/7" for 127.0.0.1 at 2017-09-05 15:09:11 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:09:14 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:09:15 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.9ms)
+  Rendered messages/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:09:18 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lW4wH0Lg2ZaI/wmv1lLfwra2W0co5wkpYT8FAGkfzhU4M1yD4o/QzqPchDqlpDD1UM1XJfkKU3ewHA7qcvFqvQ==", "message"=>{"script"=>"Nope."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", "Nope."], ["created_at", "2017-09-05 14:09:18.606424"], ["updated_at", "2017-09-05 14:09:18.606424"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/8
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2017-09-05 15:09:18 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:09:19 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:09:23 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.1ms)
+  Rendered messages/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:09:25 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dg2dUjmMBtlrUtXwaJJ6SKPuGU5HU44XCKQ18/saY1mjUPHOmeMPgUBxWGUbZJV/RZUVLJa+1EnZhz4Z4PTH8Q==", "message"=>{"script"=>":)"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", ":)"], ["created_at", "2017-09-05 14:09:25.468057"], ["updated_at", "2017-09-05 14:09:25.468057"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/9
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2017-09-05 15:09:25 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:09:27 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:09:28 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.8ms)
+  Rendered messages/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-09-05 15:09:31 +0100
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0h9cLJBto/sVvKrE7j9Ho45lHRco+bMitpf4XyBkz/R/QjCwMAKqoz6fJ1GdyaiUaB4RdfkU6XxntPO1O4prXA==", "message"=>{"script"=>":("}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("script", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["script", ":("], ["created_at", "2017-09-05 14:09:31.198891"], ["updated_at", "2017-09-05 14:09:31.198891"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/10
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/messages/10" for 127.0.0.1 at 2017-09-05 15:09:31 +0100
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-09-05 15:09:32 +0100
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-09-05 15:09:33 +0100
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (1.9ms)
+  Rendered messages/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:09:37 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:09:38 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:09:42 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/3" for 127.0.0.1 at 2017-09-05 15:09:47 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/4" for 127.0.0.1 at 2017-09-05 15:09:51 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:09:54 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:12:25 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:13:50 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered rounds/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/url" for 127.0.0.1 at 2017-09-05 15:13:51 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"url"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Round with 'id'=url):
+  
+app/controllers/rounds_controller.rb:70:in `set_round'
+Started GET "/rounds/url" for 127.0.0.1 at 2017-09-05 15:17:09 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"url"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Round with 'id'=url):
+  
+app/controllers/rounds_controller.rb:70:in `set_round'
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:17:13 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered rounds/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 33.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:19:52 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/url" for 127.0.0.1 at 2017-09-05 15:20:11 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"url"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Round with 'id'=url):
+  
+app/controllers/rounds_controller.rb:70:in `set_round'
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:20:12 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:20:14 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:20:21 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:20:32 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:20:36 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/3" for 127.0.0.1 at 2017-09-05 15:20:41 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/4" for 127.0.0.1 at 2017-09-05 15:20:42 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 41ms (Views: 36.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:20:44 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/6" for 127.0.0.1 at 2017-09-05 15:20:45 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Round with 'id'=6):
+  
+app/controllers/rounds_controller.rb:70:in `set_round'
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:20:48 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:21:32 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:21:34 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:21:39 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/3" for 127.0.0.1 at 2017-09-05 15:21:43 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/4" for 127.0.0.1 at 2017-09-05 15:21:45 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (6.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 52ms (Views: 41.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:21:47 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:21:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:28:02 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 53ms (Views: 36.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:28:07 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/3" for 127.0.0.1 at 2017-09-05 15:28:11 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rounds/4" for 127.0.0.1 at 2017-09-05 15:28:16 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:28:20 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/6" for 127.0.0.1 at 2017-09-05 15:28:25 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Round with 'id'=6):
+  
+app/controllers/rounds_controller.rb:70:in `set_round'
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:28:28 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rounds/5" for 127.0.0.1 at 2017-09-05 15:29:02 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:29:07 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rounds/2" for 127.0.0.1 at 2017-09-05 15:29:08 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rounds/1" for 127.0.0.1 at 2017-09-05 15:29:12 +0100
+Processing by RoundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRound Load (0.1ms)[0m  [1m[34mSELECT  "rounds".* FROM "rounds" WHERE "rounds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rounds/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Message Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered rounds/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+

@@ -12,8 +12,11 @@
 
 <p>
   <strong>Messages:</strong>
-  <%= @messages.find(@round.number*2-1).script %>
-  <%= @messages.find(@round.number*2).script %>
+  <%= link_to @messages.find(@round.number*2-1).script, controller: "rounds", action: "show", id: @round.number+1 %>
+    <%= @messages.find(@round.number*2).script %>
+  <a href="https://cckate.files.wordpress.com/2010/05/funny-pictures-cat-blinds-abort-retry-fail1.jpg">
+    <%= @messages.find(@round.number*2).script %>
+  </a>
 </p>
 
 
