@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @round.number %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @questions.find(@round.number).script %>
+</p>
+
+<p>
+  <strong>Messages:</strong>
+  <%= @messages.find(@round.number*2-1).script %>
+  <%= @messages.find(@round.number*2).script %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>
