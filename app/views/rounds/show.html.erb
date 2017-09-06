@@ -1,18 +1,43 @@
-<p id="notice"><%= notice %></p>
+<% if @round.number == 5 %>
+ <div class="one">
+   <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Number:</strong>
-  <%= @round.number %>
-</p>
+   <p>
+     <strong>Number:</strong>
+     <%= @round.number %>
+   </p>
 
-<p>
-  <strong>Question:</strong>
-  <%= @questions.find(@round.number).script %>
-</p>
+   <p>
+     <strong>Question:</strong>
+     <%= @questions.find(@round.number).script %>
+   </p>
 
-<p>
-  <strong>Messages:</strong>
-  <%= link_to @messages.find(@round.number*2-1).script, controller: "rounds", action: "show", id: @round.number+1 %>
+   <p>
+     <strong>Messages:</strong>
+     <%= link_to @messages.find(@round.number*2-1).script, win_index_path %>
 
-  <%= link_to @messages.find(@round.number*2).script, fail_index_path %>
-</p>
+     <%= link_to @messages.find(@round.number*2).script, fail_index_path %>
+   </p>
+ </div>
+<% else %>
+ <div class="two">
+   <p id="notice"><%= notice %></p>
+
+   <p>
+     <strong>Number:</strong>
+     <%= @round.number %>
+   </p>
+
+   <p>
+     <strong>Question:</strong>
+     <%= @questions.find(@round.number).script %>
+   </p>
+
+   <p>
+     <strong>Messages:</strong>
+     <%= link_to @messages.find(@round.number*2-1).script, controller: "rounds", action: "show", id: @round.number+1 %>
+
+     <%= link_to @messages.find(@round.number*2).script, fail_index_path %>
+   </p>
+ </div>
+<% end %>
