@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Welcome to Railsbot</title>
 </head>
 
 <body>
-  <div>
+  <div id="welcome">
     <h1>Welcome!</h1>
   </div>
 
-  <div>
+  <div id ="intro">
     <p>I'm Railsbot, your friendly conversation simulator.</p>
     <p>Time for a Quiz!</p>
   </div>
 
-  <div>
-    <p><%= link_to "Round One", controller: "rounds", action: "show", id: 1 %></p></body>
+  <div id ="roundone">
+    <p><%= link_to "Round One", controller: "rounds", action: "show", id: 1 %></p>
   </div>
-
+</body>
 </html>

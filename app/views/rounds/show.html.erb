@@ -3,7 +3,7 @@
    <p id="notice"><%= notice %></p>
 
    <p>
-     <strong>Number:</strong>
+     <strong>Round:</strong>
      <%= @round.number %>
    </p>
 
@@ -13,7 +13,7 @@
    </p>
 
    <p>
-     <strong>Messages:</strong>
+     <strong>Choose an Answer:</strong>
      <%= link_to @messages.find(@round.number*2-1).script, win_index_path %>
 
      <%= link_to @messages.find(@round.number*2).script, fail_index_path %>
@@ -24,7 +24,7 @@
    <p id="notice"><%= notice %></p>
 
    <p>
-     <strong>Number:</strong>
+     <strong>Round:</strong>
      <%= @round.number %>
    </p>
 
@@ -34,7 +34,7 @@
    </p>
 
    <p>
-     <strong>Messages:</strong>
+     <strong>Choose an Answer:</strong>
      <%= link_to @messages.find(@round.number*2-1).script, controller: "rounds", action: "show", id: @round.number+1 %>
 
      <%= link_to @messages.find(@round.number*2).script, fail_index_path %>
